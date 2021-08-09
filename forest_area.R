@@ -9,17 +9,17 @@ library(skimr)
 # loading the data --------------------------------------------------------
 
 tuesdata      <- tidytuesdayR::tt_load(2021, week = 15)
-forest        <- tuesdata$forest
+
+# we are only using forest_area for this plot
 forest_area   <- tuesdata$forest_area
-brazil_loss   <- tuesdata$brazil_loss
-soybean_use   <- tuesdata$soybean_use
-vegetable_oil <- tuesdata$vegetable_oil
+
+
+### path plot of forest_area from 1990 to 2020 in the EU
 
 
 
-# forest area -------------------------------------------------------------
+# selecting countries -----------------------------------------------------
 
-#' path plot of forest_area from 1990 to 2020 in the EU
 
 eu <- c("Austria", "Belgium", "Bulgaria", "Croatia", "Cyprus", "Czechia", "Denmark", 
         "Estonia", "Finland", "France", "Germany", "Greece", "Hungary", "Ireland", 
