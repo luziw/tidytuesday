@@ -33,7 +33,7 @@ forest_area %>%
   geom_col() +
   facet_wrap(.~entity)
 
-#' I think the area grew in every country
+#' I think the share of forest_area grew in every eu country 
 #' there is only 1 data point for: belgium, croatia, czechia, estonia, ireland, latvia, lithuania, slovakia and slovenia
 #' there is no data for cyprus, malta, netherlands and luxembourg
 #' -> I am omitting all of these countries 
@@ -48,7 +48,7 @@ forest_area %>%
   ggplot(aes(x = year, y = forest_area)) +
   geom_col() +
   facet_wrap(.~entity)
-# forest area grew in all of these countries from 1990 to 2020 (I also checked the numbers)
+# share of forest area grew in all of these countries from 1990 to 2020 (I also checked the numbers)
 
 
 
@@ -71,7 +71,7 @@ forest_area %>%
   coord_cartesian(xlim = c(-5, 80)) +
   labs(x = "Forest Area",
        y = "",
-       title = "Forest Area in Selected European Countries",
+       title = "Share of the World's Forest Area in Selected European Countries",
        subtitle = "in Percent (1990 - 2020)",
        caption = "Source: Our World in Data") +
   theme_minimal()
